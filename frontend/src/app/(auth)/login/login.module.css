@@ -1,0 +1,206 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(15, 76, 117, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(15, 76, 117, 0.05) 0px, transparent 50%);
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* LOGO E TÍTULOS */
+.brandHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  color: #0f4c75;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #0f4c75;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #0f4c75;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f4c75;
+  margin-top: 24px;
+}
+
+.subheading {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* CARDS DE PERFIL */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
+  max-width: 960px;
+  margin-top: 32px;
+}
+
+@media (max-width: 868px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+}
+
+.card {
+  border-radius: 20px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* VARIAÇÕES DE CORES DOS CARDS */
+.cardAdmin {
+  background-color: #e3f2fd;
+}
+
+.cardProfessor {
+  background-color: #e8f5e9;
+}
+
+.cardPais {
+  background-color: #f3e5f5;
+}
+
+/* ILUSTRAÇÕES / IMAGENS DE PERFIL */
+.avatarWrapper {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatarImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* ÍCONES REDONDOS */
+.iconBadge {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.badgeAdmin {
+  background-color: #1e88e5;
+}
+
+.badgeProfessor {
+  background-color: #43a047;
+}
+
+.badgePais {
+  background-color: #8e24aa;
+}
+
+.roleTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.roleTitleAdmin { color: #1565c0; }
+.roleTitleProfessor { color: #2e7d32; }
+.roleTitlePais { color: #6a1b9a; }
+
+.roleDescription {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* BOTAO CIRCULAR DE SETA */
+.arrowBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.arrowAdmin { background-color: #1e88e5; }
+.arrowProfessor { background-color: #43a047; }
+.arrowPais { background-color: #8e24aa; }
+
+/* FOOTER */
+.footer {
+  background-color: #0f4c75;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.textMuted {
+  color: #cbd5e1;
+}

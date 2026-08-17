@@ -1,0 +1,219 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(15, 76, 117, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(15, 76, 117, 0.05) 0px, transparent 50%);
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* LOGO E TÍTULOS DO TOPO */
+.brandHeader {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  color: #0f4c75;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #0f4c75;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #0f4c75;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* CARD DE FORMULÁRIO */
+.cardForm {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f4c75;
+  text-align: center;
+}
+
+.subheading {
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 28px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f4c75;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 14px;
+  color: #0f4c75;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px 12px 42px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: #0f4c75;
+}
+
+.togglePasswordBtn {
+  position: absolute;
+  right: 14px;
+  background: none;
+  border: none;
+  color: #0f4c75;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitBtn {
+  background-color: #0077b6;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.submitBtn:hover {
+  background-color: #0f4c75;
+}
+
+/* DIVISOR */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0 20px 0;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dividerSpan {
+  padding: 0 12px;
+}
+
+/* LINKS DE SUPORTE */
+.linksWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #0f4c75;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.linkItem:hover {
+  opacity: 0.8;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #0f4c75;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.textMuted {
+  color: #cbd5e1;
+}

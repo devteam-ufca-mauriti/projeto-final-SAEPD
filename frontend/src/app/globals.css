@@ -1,0 +1,19 @@
+/* src/app/globals.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #0f4c75;
+  --bg-color: #f1f5f9;
+  --text-color: #1e293b;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

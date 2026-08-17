@@ -1,0 +1,177 @@
+.layoutContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 32px 40px;
+  overflow-y: auto;
+}
+
+.pageHeader {
+  margin-bottom: 24px;
+  border-bottom: 2px solid #0d4b75;
+  padding-bottom: 12px;
+}
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0d4b75;
+  margin: 0;
+}
+
+/* CARD CONTAINER */
+.cardContainer {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.cardHeaderTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cardIcon {
+  color: #0d4b75;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.cardSubtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin: 2px 0 0 0;
+}
+
+.saveBtn {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.saveBtn:hover {
+  background-color: #1d4ed8;
+}
+
+/* TABELA DE NOTAS */
+.tableContainer {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 32px;
+}
+
+.tableHeader {
+  background-color: #f8fafc;
+  border-radius: 6px;
+}
+
+.tableHeader th {
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #475569;
+  text-align: left;
+}
+
+.tableHeader th:last-child {
+  text-align: center;
+}
+
+.tableRow {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.tableRow td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.numCol {
+  width: 60px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.nameCol {
+  font-weight: 600;
+}
+
+.gradeCol {
+  width: 140px;
+  text-align: center;
+}
+
+.gradeInput {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background-color: #f8fafc;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.gradeInput:focus {
+  border-color: #2563eb;
+  background-color: #ffffff;
+}
+
+/* CAIXA DE INSTRUÇÕES */
+.instructionsBox {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #f1f5f9;
+}
+
+.instructionsTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 12px 0;
+}
+
+.instructionsList {
+  margin: 0;
+  padding-left: 20px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.instructionsList li {
+  margin-bottom: 4px;
+}
